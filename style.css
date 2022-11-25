@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    background-color: var(--radio-color);
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--radio-color);
+}
+
+#head {
+    margin: 2rem 0;
+    width: 70%;
+    border: 5px solid rgb(189, 188, 188);
+}
+
+#head h1 {
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#head input {
+    height: 3rem;
+    width: 40%;
+    margin: 10px;
+    border-radius: 1rem;
+    border: 3px solid black;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+#head button {
+    height: 3rem;
+    width: 13%;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    transition: .3s;
+}
+
+#head button:hover {
+    box-shadow: 5px 5px 10px rgb(19, 18, 18);
+    transform: scale(1.05);
+}
+
+form {
+    width: 25%;
+    height: 3rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+form input[type='radio'] {
+    appearance: none;
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    offset: 1rem;
+}
+
+form input[type='radio']:nth-of-type(1) {
+    background-color: rgb(189, 188, 188);
+}
+
+form input[type='radio']:nth-of-type(2) {
+    background-color: pink;
+}
+
+form input[type='radio']:nth-of-type(3) {
+    background-color: blue;
+}
+
+form input[type='radio']:nth-of-type(4) {
+    background-color: green;
+}
+
+form input[type='radio']:nth-of-type(5) {
+    background-color: rgb(33, 32, 35);
+}
+
+input[type='radio']:checked {
+    background-color: var(--radio-color);
+}
+
+:root:has(#gray:checked) {
+    background-color: gray;
+}
+
+:root:has(#babypink:checked) {
+    background-color: pink;
+}
+
+:root:has(#blue:checked) {
+    background-color: blue;
+}
+
+:root:has(#green:checked) {
+    background-color: green;
+}
+
+:root:has(#dark:checked) {
+    background-color: rgb(33, 32, 35);
+}
+
+#movie-container {
+    margin: 2rem 0;
+    width: 70%;
+    border: 5px solid rgb(189, 188, 188);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#movie-container img {
+    width: 24%;
+    margin: .3rem 0;
+}
